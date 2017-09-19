@@ -172,7 +172,7 @@
 
         
         <a href="/2017/09/undefined/js盒模型/" class="archive-article-date">
-  	<time datetime="2017-09-19T02:38:20.794Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
+  	<time datetime="2017-09-19T02:47:17.719Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
 </a>
         
       </header>
@@ -180,9 +180,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>js盒子模型–&gt;浏览器提供一些获取盒子位置信息的属性和方法</p>
-<p>1、clientWidth/clientHeight系列<br>  clientWidth:width+左右padding<br>  clientHeight:height+上下padding<br>  clientTop:上边框的高度<br>  clientLeft:左边框的宽度<br>  如果设置了box-sizing:border-box; 则clientWidth/clientHeight =容器宽/高- border</p>
-<p>2、offsetWidth/offsetHeight系列<br>offsetWidth:clientWidth+左右边框<br>offsetHeight:clientHeight+上下边框<br>高度不设置的话，高度会自适应，height的值就是实际内容的高度<br>3、scrollWidth/scrollHeight系列<br>在没有内容溢出的情况下和clientWidth/clientHeight是一样的<br>有内容的溢出情况(在每一个浏览器中的值不太一样,加上overflow: hidden和不加还有少许的区别):<br>scrollHeight:约等于 真实内容的高度(包含溢出的内容)+上padding<br>scrollWidth:约等于 真实内容的宽度(包含溢出的内容)+左padding<br>获取当前浏览器一屏幕的宽度和高度<br>console.log(document.documentElement.clientWidth || document.body.clientWidth);<br>console.log(document.documentElement.clientHeight || document.body.clientHeight);</p>
-<p>当前所有屏加起来的高度(当前网页的高度)~=<br>console.log(document.documentElement.scrollHeight||document.body.scrollHeight);</p>
+<p>1、clientWidth/clientHeight系列<br>clientWidth:width+左右padding<br>clientHeight:height+上下padding<br>clientTop:上边框的高度<br>clientLeft:左边框的宽度<br>如果设置了box-sizing:border-box; 则clientWidth/clientHeight =容器宽/高- border</p>
+<p>2、offsetWidth/offsetHeight系列<br>offsetWidth:clientWidth+左右边框<br>offsetHeight:clientHeight+上下边框<br>高度不设置的话，高度会自适应，height的值就是实际内容的高度</p>
+<p>3、scrollWidth/scrollHeight系列<br>在没有内容溢出的情况下和clientWidth/clientHeight是一样的<br>有内容的溢出情况(在每一个浏览器中的值不太一样,加上overflow: hidden和不加还有少许的区别):<br>scrollHeight:约等于 真实内容的高度(包含溢出的内容)+上padding<br>scrollWidth:约等于 真实内容的宽度(包含溢出的内容)+左padding</p>
+<p>获取当前浏览器一屏幕的宽度和高度<br>console.log(document.documentElement.clientWidth || document.body.clientWidth);<br>console.log(document.documentElement.clientHeight || document.body.clientHeight);<br>当前所有屏加起来的高度(当前网页的高度)~=<br>console.log(document.documentElement.scrollHeight||document.body.scrollHeight);</p>
 
       
 
