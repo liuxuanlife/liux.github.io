@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 天意</title>
+  <title>JS常用正则方法 | 天意</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="javaxcipt css3 html5">
-<meta property="og:type" content="website">
-<meta property="og:title" content="天意">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990// 清除两边的空格 String.prototype.t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS常用正则方法">
+<meta property="og:url" content="http://yoursite.com/2017/09/undefined/JS常用正则/index.html">
 <meta property="og:site_name" content="天意">
-<meta property="og:description" content="javaxcipt css3 html5">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990// 清除两边的空格 String.prototype.t">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-21T09:46:25.589Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="天意">
-<meta name="twitter:description" content="javaxcipt css3 html5">
+<meta name="twitter:title" content="JS常用正则方法">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990// 清除两边的空格 String.prototype.t">
   
   
     <link rel="icon" href="/favicon.png">
@@ -141,76 +142,84 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-JS常用正则" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      JS常用正则方法
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/undefined/JS常用正则/" class="archive-article-date">
+
+        
+        <a href="/2017/09/undefined/JS常用正则/" class="archive-article-date">
   	<time datetime="2017-09-21T09:45:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-21</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/undefined/JS常用正则/">JS常用正则方法</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 清除两边的空格 </span></div><div class="line"><span class="built_in">String</span>.prototype.trim = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/(^\s*)|(\s*$)/g</span>, <span class="string">''</span>); </div><div class="line">&#125;; </div><div class="line"><span class="comment">// 合并多个空白为一个空白 </span></div><div class="line"><span class="built_in">String</span>.prototype.ResetBlank = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">var</span> regEx = <span class="regexp">/\s+/g</span>; </div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.replace(regEx, <span class="string">' '</span>); </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">// 保留数字 </span></div><div class="line"><span class="built_in">String</span>.prototype.GetNum = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">var</span> regEx = <span class="regexp">/[^\d]/g</span>; </div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.replace(regEx, <span class="string">''</span>); </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">// 保留中文 </span></div><div class="line"><span class="built_in">String</span>.prototype.GetCN = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">var</span> regEx = <span class="regexp">/[^\u4e00-\u9fa5\uf900-\ufa2d]/g</span>; </div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.replace(regEx, <span class="string">''</span>); </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">// String转化为Number </span></div><div class="line"><span class="built_in">String</span>.prototype.ToInt = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">return</span> <span class="built_in">isNaN</span>(<span class="built_in">parseInt</span>(<span class="keyword">this</span>)) ? <span class="keyword">this</span>.toString() : <span class="built_in">parseInt</span>(<span class="keyword">this</span>); </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">// 得到字节长度 </span></div><div class="line"><span class="built_in">String</span>.prototype.GetLen = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">var</span> regEx = <span class="regexp">/^[\u4e00-\u9fa5\uf900-\ufa2d]+$/</span>; </div><div class="line">  <span class="keyword">if</span> (regEx.test(<span class="keyword">this</span>)) &#123; </div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.length * <span class="number">2</span>; </div><div class="line">  &#125; <span class="keyword">else</span> &#123; </div><div class="line">    <span class="keyword">var</span> oMatches = <span class="keyword">this</span>.match(<span class="regexp">/[\x00-\xff]/g</span>); </div><div class="line">    <span class="keyword">var</span> oLength = <span class="keyword">this</span>.length * <span class="number">2</span> - oMatches.length; </div><div class="line">    <span class="keyword">return</span> oLength; </div><div class="line">  &#125; </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">// 获取文件全名 </span></div><div class="line"><span class="built_in">String</span>.prototype.GetFileName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">var</span> regEx = <span class="regexp">/^.*\/([^\/\?]*).*$/</span>; </div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.replace(regEx, <span class="string">'$1'</span>); </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">// 获取文件扩展名 </span></div><div class="line"><span class="built_in">String</span>.prototype.GetExtensionName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">var</span> regEx = <span class="regexp">/^.*\/[^\/]*(\.[^\.\?]*).*$/</span>; </div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.replace(regEx, <span class="string">'$1'</span>); </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">//替换所有</span></div><div class="line"><span class="built_in">String</span>.prototype.replaceAll = <span class="function"><span class="keyword">function</span>(<span class="params">reallyDo, replaceWith, ignoreCase</span>) </span>&#123; </div><div class="line">  <span class="keyword">if</span> (!<span class="built_in">RegExp</span>.prototype.isPrototypeOf(reallyDo)) &#123; </div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="keyword">new</span> <span class="built_in">RegExp</span>(reallyDo, (ignoreCase ? <span class="string">"gi"</span> : <span class="string">"g"</span>)), replaceWith); </div><div class="line">  &#125; <span class="keyword">else</span> &#123; </div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.replace(reallyDo, replaceWith); </div><div class="line">  &#125; </div><div class="line">&#125;; </div><div class="line"><span class="comment">//格式化字符串 add By 刘景宁 2010-12-09  </span></div><div class="line"><span class="built_in">String</span>.Format = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">if</span> (<span class="built_in">arguments</span>.length == <span class="number">0</span>) &#123; </div><div class="line">    <span class="keyword">return</span> <span class="string">''</span>; </div><div class="line">  &#125; </div><div class="line">  </div><div class="line">  <span class="keyword">if</span> (<span class="built_in">arguments</span>.length == <span class="number">1</span>) &#123; </div><div class="line">    <span class="keyword">return</span> <span class="built_in">arguments</span>[<span class="number">0</span>]; </div><div class="line">  &#125; </div><div class="line">  </div><div class="line">  <span class="keyword">var</span> reg = <span class="regexp">/&#123;(\d+)?&#125;/g</span>; </div><div class="line">  <span class="keyword">var</span> args = <span class="built_in">arguments</span>; </div><div class="line">  <span class="keyword">var</span> result = <span class="built_in">arguments</span>[<span class="number">0</span>].replace(reg, <span class="function"><span class="keyword">function</span>(<span class="params">$<span class="number">0</span>, $<span class="number">1</span></span>) </span>&#123; </div><div class="line">    <span class="keyword">return</span> args[<span class="built_in">parseInt</span>($<span class="number">1</span>) + <span class="number">1</span>]; </div><div class="line">  &#125;); </div><div class="line">  <span class="keyword">return</span> result; </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">// 数字补零 </span></div><div class="line"><span class="built_in">Number</span>.prototype.LenWithZero = <span class="function"><span class="keyword">function</span>(<span class="params">oCount</span>) </span>&#123; </div><div class="line">  <span class="keyword">var</span> strText = <span class="keyword">this</span>.toString(); </div><div class="line">  <span class="keyword">while</span> (strText.length &lt; oCount) &#123; </div><div class="line">    strText = <span class="string">'0'</span> + strText; </div><div class="line">  &#125; </div><div class="line">  <span class="keyword">return</span> strText; </div><div class="line">&#125;; </div><div class="line">  </div><div class="line"><span class="comment">// Unicode还原 </span></div><div class="line"><span class="built_in">Number</span>.prototype.ChrW = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </div><div class="line">  <span class="keyword">return</span> <span class="built_in">String</span>.fromCharCode(<span class="keyword">this</span>); </div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/undefined/20170919/" class="archive-article-date">
-  	<time datetime="2017-09-19T07:44:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/undefined/20170919/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">js盒模型</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/undefined/20170919/">js盒模型</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -233,8 +242,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
